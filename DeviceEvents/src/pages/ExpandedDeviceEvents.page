@@ -1,0 +1,10 @@
+<apex:page docType="html" showHeader="false" sidebar="false" standardStylesheets="true" 
+  standardController="Account" extensions="ExpandedDeviceEventsController">
+	<apex:pageBlock id="CustomList" title="Device Events">
+	    <apex:pageBlockTable value="{!deviceEvents}" var="deviceEvent">
+	        <apex:column value="{!deviceEvent.Name}" /> 
+	        <apex:column value="{!deviceEvent.Severity__c}" /> 
+	        <apex:column value="{!deviceEvent.Description__c}" /> 
+	    </apex:pageBlockTable>
+	</apex:pageBlock>
+</apex:page>
